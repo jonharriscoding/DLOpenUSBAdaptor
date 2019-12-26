@@ -43,7 +43,7 @@ From Scoreboard Pin -> To Arduino Pin (Function)
 * Scoreboard 9 to Arduino 11 (DEN2)
 * Scoreboard 10 - NO CONNECTION
 * Scoreboard 11, 12, 13 - +5V
-* Scoreboard 14, 15, 15 - Ground Connection
+* Scoreboard 14, 15, 16 - Ground Connection
 
 ![Image of Connections](https://github.com/jonharriscoding/DLOpenUSBAdaptor/blob/master/dl_adaptor.png)
 
