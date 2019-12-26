@@ -30,7 +30,7 @@ I plan on having the adaptor give a return signal to confirm that a connection h
 There will need to be a command system to allow the segments to be controlled by emulators, plus the Skill Lights.
 
 
-##Connections
+## Connections
 From Scoreboard Pin -> To Arduino Pin (Function)
 * Scoreboard 1 to Arduino 3 (D3)
 * Scoreboard 2 to Arduino 4 (D2)
