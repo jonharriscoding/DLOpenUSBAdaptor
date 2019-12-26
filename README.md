@@ -14,7 +14,7 @@ For now, I'm just setting up the repository with information and I expect to be 
 
 # Skill LEDs
 This is to support the Skill Light Indicator that was present on Space Ace Cabinets
-These are currently planned to be ACTIVE HIGH signals. If using own LEDs, you will need to calculate the resistance value for each LED's resistor to avoid to Arduino Popping your LEDs!
+These are currently planned to be ACTIVE HIGH signals. If using own LEDs, you will need to calculate the resistance value for each LED's resistor to avoid the Arduino Popping your LEDs!
 
 # Baud Rate
 Until I get this project going with more traction, i'm going to leave this at 9600bps for testing. Once debugging is done, this can be amended.
