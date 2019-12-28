@@ -32,6 +32,9 @@ Send [VERSION?] to receive [VERSION#.##] - This would then allow the Emulator to
 ### Skill Lights
 Send [SKILL#@] to control the Skill Lights. Replace # with 1 for the Easy Light, 2 for the Medium Light & 3 for the Hard Light. Replace @ with 0 to turn that light off, or 1 to turn it on.
 
+### Control of the Segments
+I'm working this one out, so come back to check on that.
+
 ## Connections
 
 ### Interfacing the Scoreboard to the Arduino
