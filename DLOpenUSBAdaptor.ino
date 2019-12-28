@@ -31,18 +31,18 @@
 const int SerialBaudRate = 9600; //Serial Baud Rate can be adjusted here rather than in the main code.
 
 //Assigning Pin Numbers
-const int OutputDEN1 = 2; //Connect to Scoreboard Pin 8
-const int OutputDEN2 = 3; //Connect to Scoreboard Pin 9
-const int OutputDA0 = 4; //Connect to Scoreboard Pin 7
-const int OutputDA1 = 5; //Connect to Scoreboard Pin 6
-const int OutputDA2 = 6; //Connect to Scoreboard Pin 5
-const int OutputDD0 = 7; //Connect to Scoreboard Pin 4
-const int OutputDD1 = 8; //Connect to Scoreboard Pin 3
-const int OutputDD2 = 9; //Connect to Scoreboard Pin 2
-const int OutputDD3 = 10; //Connect to Scoreboard Pin 1
-const int SkillEasy = 11; //Connect to the Easy Skill Light
-const int SkillMedium = 12; //Connect to the Medium Skill Light
-const int SkillHard = 13; //Connect to the Hard Skill Light
+const int OutputDEN1 = 10; //Connect to Scoreboard Pin 8
+const int OutputDEN2 = 11; //Connect to Scoreboard Pin 9
+const int OutputDA0 = 9; //Connect to Scoreboard Pin 7
+const int OutputDA1 = 8; //Connect to Scoreboard Pin 6
+const int OutputDA2 = 7; //Connect to Scoreboard Pin 5
+const int OutputDD0 = 6; //Connect to Scoreboard Pin 4
+const int OutputDD1 = 5; //Connect to Scoreboard Pin 3
+const int OutputDD2 = 4; //Connect to Scoreboard Pin 2
+const int OutputDD3 = 3; //Connect to Scoreboard Pin 1
+const int SkillEasy = A2; //Connect to the Easy Skill Light
+const int SkillMedium = A1; //Connect to the Medium Skill Light
+const int SkillHard = A0; //Connect to the Hard Skill Light
 
 int SkillLevel = 0;
 int SkillState = 0;
