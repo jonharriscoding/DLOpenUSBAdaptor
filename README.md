@@ -5,7 +5,7 @@ THE MAIN GOAL (Dec 26th, 2019)
 
 The idea here is to use an Arduino Uno or Compatable to create a USB Serial Interface for the Scoreboard Unit to the Dragon's Lair Laserdisc Arcade game, and implement a simple serial protocol to allow communication by the Daphne Emulator - However, I don't have the skill set needed to add the changes to Daphne. 
 
-So, I'm hoping once I make this adaptor from the Arduino, support can be implemented into the Daphne Emulator by others.
+So, I'm hoping once I make this adaptor from the Arduino, support can be implemented into the Daphne Emulator, or other Emulators by others.
 
 For now, I'm just setting up the repository with information and I expect to be tinkering on December 30th 2019 through Jan 1st 2020 and getting the connection schematic up.
 
@@ -21,13 +21,13 @@ There will need to be a command system to allow the segments to be controlled by
 Until I get this project going with more traction, i'm going to leave this at 9600bps for testing. Once debugging is done, this can be amended.
 
 ### Hey, I'm here!
-So, to aid the Daphne Emulator ensuring it's got a valid adaptor for the Scoreboard on a com port, you can send
+So, to aid the Emulator ensuring it's got a valid adaptor for the Scoreboard on a com port, you can send
 [DAPHNE?]
 and it would return
 [SAVEME!]
 
 ### Up To Date Code
-Send [VERSION?] to receive [VERSION#.##] - This would then allow DAPHNE to ensure it's talking to the most appropriate code version. Obviously, replace the Hashes with Numbers for the version number.
+Send [VERSION?] to receive [VERSION#.##] - This would then allow the Emulator to ensure it's talking to the most appropriate code version. Obviously, replace the Hashes with Numbers for the version number.
 
 ### Skill Lights
 Send [SKILL#@] to control the Skill Lights. Replace # with 1 for the Easy Light, 2 for the Medium Light & 3 for the Hard Light. Replace @ with 0 to turn that light off, or 1 to turn it on.
