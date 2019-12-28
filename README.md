@@ -1,18 +1,24 @@
 # DLOpenUSBAdaptor
 An Open Version of a USB / Serial Adaptor to Communicate with Dragon's Lair, Space Ace &amp; Thayer's Quest Scoreboard Units
 
-## THE MAIN GOAL (Dec 26th, 2019)
-
+## THE MAIN GOAL 
 The idea here is to use an Arduino Uno or Compatable to create a USB Serial Interface for the Scoreboard Unit to the Dragon's Lair Laserdisc Arcade game, and implement a simple serial protocol to allow communication by the Daphne Emulator - However, I don't have the skill set needed to add the changes to Daphne. 
 
 So, I'm hoping once I make this adaptor from the Arduino, support can be implemented into the Daphne Emulator, or other Emulators by others.
 
 For now, I'm just setting up the repository with information and I expect to be tinkering on December 30th 2019 through Jan 1st 2020 and getting the connection schematic up.
 
+## WHAT YOU SHOULD KNOW
+This project is in it's infancy stages. I do not claim to be a professional coder by any means. I consider myself to be at Hobbyist / Amateur level. But my aim is to make this an open project so that others can come in, tweak the code, and make the adaptor available to all who may need it in the future.
 
-# Some Initial Stuff
+## WHY A USB SERIAL ADAPTOR?
+Put simply, Parallel Ports have vanished from native Windows support in the way that the Daphne Emulator needs to access them, in order for the Scoreboard Units to work. Making a USB Serial adaptor is still an option because Serial Ports are still widely supported on PC, and provide a convienant USB connection, also offering a +5V Power Source for lighting the segments of the Scoreboard. 
+
+## WHY ARDUINO?
+'Cause it's what I had handy! Plus, it's got a built in USB to Serial Port conversion and programmable Microcontroller on board, which we can program to interface the BCM7218 IC's used for driving the display digits. They are also extremely cheap and require no modification to interface to the Scoreboard.
 
 
+# Setting out the project aims
 
 ## Serial Protocol
 There will need to be a command system to allow the segments to be controlled by emulators, plus the Skill Lights.
@@ -22,9 +28,7 @@ Until I get this project going with more traction, i'm going to leave this at 96
 
 ### Hey, I'm here!
 So, to aid the Emulator ensuring it's got a valid adaptor for the Scoreboard on a com port, you can send
-[DAPHNE?]
-and it would return
-[SAVEME!]
+[DAPHNE?] and it would return [SAVEME!]
 
 ### Up To Date Code
 Send [VERSION?] to receive [VERSION#.##] - This would then allow the Emulator to ensure it's talking to the most appropriate code version. Obviously, replace the Hashes with Numbers for the version number.
