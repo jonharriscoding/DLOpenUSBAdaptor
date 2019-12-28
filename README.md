@@ -1,7 +1,7 @@
 # DLOpenUSBAdaptor
 An Open Version of a USB / Serial Adaptor to Communicate with Dragon's Lair, Space Ace &amp; Thayer's Quest Scoreboard Units
 
-THE MAIN GOAL (Dec 26th, 2019)
+##THE MAIN GOAL (Dec 26th, 2019)
 
 The idea here is to use an Arduino Uno or Compatable to create a USB Serial Interface for the Scoreboard Unit to the Dragon's Lair Laserdisc Arcade game, and implement a simple serial protocol to allow communication by the Daphne Emulator - However, I don't have the skill set needed to add the changes to Daphne. 
 
