@@ -37,7 +37,17 @@ Send [VERSION?] to receive [VERSION#.##] - This would then allow the Emulator to
 Send [SKILL#@] to control the Skill Lights. Replace # with 1 for the Easy Light, 2 for the Medium Light & 3 for the Hard Light. Replace @ with 0 to turn that light off, or 1 to turn it on.
 
 ### Control of the Segments
-I'm working this one out, so come back to check on that.
+The LED's are split into two banks of 8 digits.
+* The first bank will use it's first 6 digits for the Player 1 Score, Then the 7th for Player 1 Lives and the 8th for Player 2 Lives.
+* The second bank will use it's first 6 digits for the Player 2 Score, then the 7th and 8th Digits for the amount of credits in the game.
+
+To set the digits, 
+
+* Send [DISP1######ab] replacing # with player 1 score data, a for P1 lives, b for p2 lives
+* Send [DISP2######cd] replace # with player 2 score data, cd for credits
+
+If you need a character to be off, replace the appropriate section with a space. 
+So for example to set the display for Player 1 for a score of 100, with 3 lives, and the 2nd player off send [DISP1   1001 ] followed by [DISP2      cd] replacing cd with the number of credits.
 
 ## Connections
 
