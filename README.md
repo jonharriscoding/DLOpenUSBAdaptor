@@ -12,13 +12,7 @@ For now, I'm just setting up the repository with information and I expect to be 
 
 # Some Initial Stuff
 
-## Skill LEDs
-This is to support the Skill Light Indicator that was present on Space Ace Cabinets
-These are currently planned to be ACTIVE HIGH signals. If using own LEDs, you will need to calculate the resistance value for each LED's resistor to avoid the Arduino Popping your LEDs!
 
-* Skill Hard Light is on Arduino A0
-* Skill Medium Light is on Arduino A1
-* Skill Easy Light is on Arduino A2
 
 ## Serial Protocol
 There will need to be a command system to allow the segments to be controlled by emulators, plus the Skill Lights.
@@ -39,6 +33,8 @@ Send [VERSION?] to receive [VERSION#.##] - This would then allow DAPHNE to ensur
 Send [SKILL#@] to control the Skill Lights. Replace # with 1 for the Easy Light, 2 for the Medium Light & 3 for the Hard Light. Replace @ with 0 to turn that light off, or 1 to turn it on.
 
 ## Connections
+
+### Interfacing the Scoreboard to the Arduino
 From Scoreboard Pin -> To Arduino Pin (Function)
 * Scoreboard 1 to Arduino 3 (D3)
 * Scoreboard 2 to Arduino 4 (D2)
@@ -53,6 +49,16 @@ From Scoreboard Pin -> To Arduino Pin (Function)
 * Scoreboard 11, 12, 13 - +5V
 * Scoreboard 14, 15, 16 - Ground Connection
 
+### Interfacing the Skill Lights to the Arduino
+This is to support the Skill Light Indicator that was present on Space Ace Cabinets
+These are currently planned to be ACTIVE HIGH signals. If using own LEDs, you will need to calculate the resistance value for each LED's resistor to avoid the Arduino Popping your LEDs!
+
+* Skill Hard Light is on Arduino A0
+* Skill Medium Light is on Arduino A1
+* Skill Easy Light is on Arduino A2
+
+
+### A VERY rough connections diagram!
 ![Image of Connections](https://github.com/jonharriscoding/DLOpenUSBAdaptor/blob/master/dl_adaptor.png)
 
 *I apologise if you find the graphic not to engineering standards but if you had essential tremor you'd find this difficult to do.*
