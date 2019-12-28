@@ -30,7 +30,7 @@ and it would return
 [SAVEME!]
 
 ## Up To Date Code
-Send [VERSION?] to receive [VERSION#.##]
+Send [VERSION?] to receive [VERSION#.##] - This would then allow DAPHNE to ensure it's talking to the most appropriate code version. Obviously, replace the Hashes with Numbers for the version number.
 
 ## Serial Protocol
 There will need to be a command system to allow the segments to be controlled by emulators, plus the Skill Lights.
