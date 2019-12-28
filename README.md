@@ -24,7 +24,13 @@ These are currently planned to be ACTIVE HIGH signals. If using own LEDs, you wi
 Until I get this project going with more traction, i'm going to leave this at 9600bps for testing. Once debugging is done, this can be amended.
 
 ## Hey, I'm here!
-I plan on having the adaptor give a return signal to confirm that a connection has been made to the correct serial port. 
+So, to aid the Daphne Emulator ensuring it's got a valid adaptor for the Scoreboard on a com port, you can send
+[DAPHNE?]
+and it would return
+[SAVEME!]
+
+## Up To Date Code
+Send [VERSION?] to receive [VERSION#.##]
 
 ## Serial Protocol
 There will need to be a command system to allow the segments to be controlled by emulators, plus the Skill Lights.
