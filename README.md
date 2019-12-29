@@ -47,7 +47,7 @@ To set the digits,
 * Send `[DISP2######cd]` replace # with player 2 score data, cd for credits
 
 If you need a character to be off, replace the appropriate section with a space. 
-So for example to set the display for Player 1 for a score of 100, with 3 lives, and the 2nd player off send `[DISP1###1001#]` followed by `[DISP2######cd]` replacing cd with the number of credits, replacing # with spaces in the given examples.
+So for example to set the display for Player 1 for a score of 100, with 3 lives, and the 2nd player off send `[DISP1###1003#]` followed by `[DISP2######cd]` replacing cd with the number of credits, replacing # with spaces in the given examples.
 
 ## Connections
 
