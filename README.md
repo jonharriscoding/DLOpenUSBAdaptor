@@ -28,13 +28,13 @@ Until I get this project going with more traction, i'm going to leave this at 96
 
 ### Hey, I'm here!
 So, to aid the Emulator ensuring it's got a valid adaptor for the Scoreboard on a com port, you can send
-'[DAPHNE?]' and it would return '[SAVEME!]'
+`[DAPHNE?]` and it would return `[SAVEME!]`
 
 ### Up To Date Code
-Send '[VERSION?]' to receive '[VERSION#.##]' - This would then allow the Emulator to ensure it's talking to the most appropriate code version. Obviously, replace the Hashes with Numbers for the version number.
+Send `[VERSION?]` to receive `[VERSION#.##]` - This would then allow the Emulator to ensure it's talking to the most appropriate code version. Obviously, replace the Hashes with Numbers for the version number.
 
 ### Skill Lights
-Send '[SKILL#@]' to control the Skill Lights. Replace # with 1 for the Easy Light, 2 for the Medium Light & 3 for the Hard Light. Replace @ with 0 to turn that light off, or 1 to turn it on.
+Send `[SKILL#@]` to control the Skill Lights. Replace # with 1 for the Easy Light, 2 for the Medium Light & 3 for the Hard Light. Replace @ with 0 to turn that light off, or 1 to turn it on.
 
 ### Control of the Segments
 The LED's are split into two banks of 8 digits.
@@ -43,11 +43,11 @@ The LED's are split into two banks of 8 digits.
 
 To set the digits, 
 
-* Send '[DISP1######ab]' replacing # with player 1 score data, a for P1 lives, b for p2 lives
-* Send '[DISP2######cd]' replace # with player 2 score data, cd for credits
+* Send `[DISP1######ab]` replacing # with player 1 score data, a for P1 lives, b for p2 lives
+* Send `[DISP2######cd]` replace # with player 2 score data, cd for credits
 
 If you need a character to be off, replace the appropriate section with a space. 
-So for example to set the display for Player 1 for a score of 100, with 3 lives, and the 2nd player off send '[DISP1   1001 ]' followed by '[DISP2      cd]' replacing cd with the number of credits.
+So for example to set the display for Player 1 for a score of 100, with 3 lives, and the 2nd player off send `[DISP1   1001 ]` followed by `[DISP2      cd]` replacing cd with the number of credits.
 
 ## Connections
 
